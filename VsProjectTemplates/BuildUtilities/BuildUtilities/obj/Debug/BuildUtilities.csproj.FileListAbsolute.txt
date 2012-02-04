@@ -1,0 +1,5 @@
+C:\Users\kazuk\mygit\codepub\VsProjectTemplates\BuildUtilities\BuildUtilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\kazuk\mygit\codepub\VsProjectTemplates\BuildUtilities\BuildUtilities\obj\Debug\CSharp\1033\BuildUtilities.zip
+C:\Users\kazuk\mygit\codepub\VsProjectTemplates\BuildUtilities\BuildUtilities\obj\Debug\BuildUtilities.dll
+C:\Users\kazuk\mygit\codepub\VsProjectTemplates\BuildUtilities\BuildUtilities\obj\Debug\BuildUtilities.pdb
+C:\Users\kazuk\mygit\codepub\VsProjectTemplates\BuildUtilities\BuildUtilities\bin\Debug\ProjectTemplates\CSharp\1033\BuildUtilities.zip

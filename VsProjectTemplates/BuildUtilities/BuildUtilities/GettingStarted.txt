@@ -1,0 +1,27 @@
+﻿
+MS Build のコードタスクを使ったビルド拡張をやりやすくする為のプロジェクトテンプレートです。
+
+デフォルトで 
+
+Microsoft.Build.Framework
+Microsoft.Build.Utilities.v4.0
+
+が参照設定されていますので、MSBuild のカスタムタスクをいきなり書けるようになっています。
+
+CustomCodeTask1 をベースに必要な処理を実装すればMSBuild 内で普通にコードタスクとして実行する事が出来ます。
+
+BuildUtilities.targets に CustomCodeTask1 を UsingTask で取り込む例がありこれをソリューション内の別のプロジェクト
+から Import すればタスクを使えるようになります。
+
+Example:
+	<Import Project="..\Build.Utilities\BuildUtilities.targets" />
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
+注意事項:
+
+1.
+	Visual Studio はプロジェクトファイルを結構激しくキャッシュしますので、targets / csproj を書き換えても
+	反映されない事が多いです。編集中は msbuild をコンソールから実行して確認する事をお勧めします。
+
+2.
+	インラインコードタスクはソース単位で独立している必要があります。

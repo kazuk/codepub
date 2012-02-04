@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!--
+    CustomCodeTask1.cs を CustomCodeTask1 タスクとして実体化します
+  -->
+  <UsingTask 
+    TaskName="CustomCodeTask1" 
+    TaskFactory="CodeTaskFactory"
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+    <ParameterGroup />
+    <Task>
+      <Code Type="Class" Language="cs" Source="$(MSBuildThisFileDirectory)\CustomCodeTask1.cs" />
+    </Task>
+  </UsingTask>
+
+  <!-- 
+   カスタムタスクを呼ぶだけのターゲットです。
+   コマンドラインから以下の様に呼ぶ事が出来ます。
+   
+    MsBuild /t:TestInvokeCustomTarget 
+  -->
+  <Target Name="TestInvokeCustomTarget">
+    <CustomCodeTask1 />
+  </Target>
+</Project>

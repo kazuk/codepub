@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>BuildUtilities</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <Icon>BuildUtilities.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>cdf04d30-0ac3-4b70-bd4d-1778b68156e0</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BuildUtilities</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem OpenInEditor="true" TargetFileName="GettingStarted.txt">GettingStarted.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">CustomCodeTask1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">BuildUtilities.targets</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
